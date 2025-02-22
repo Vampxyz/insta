@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: #eee;
+}
+
+#container {
+    background-color: #fff;
+    width: 450px;
+    height: 85vh;
+
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    grid-template-columns: 1fr;
+
+    box-shadow: 15px 15px 40px black;
+}
+
+/* PROFILE */
+#container .profile {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 10px;
+
+}
+
+#container .profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+    border: 2px solid white;
+    outline: 3px solid rgb(54, 54, 54);
+    border-radius: 50%;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container .profile .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.profile .profile-info .ig {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.profile .profile-info .name {
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.profile .profile-info .bio {
+    font-size: 0.8rem;
+    color: gray;
+    width: 200px;
+}
+
+.profile .profile-info .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    
+    margin-top: 16px;
+
+}
+
+/* IMAGES */
+#container .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    padding: 10px;
+}
