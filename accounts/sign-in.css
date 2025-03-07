@@ -8,13 +8,20 @@
 
 #main {
     display: grid;
-
 }
 
-p::after, p::before {
+#main .separate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+    gap: 10px;
+}
+.separate::after, .separate::before {
     content: '';
     display: block;
-    width: 100%;
+    width: 50%;
     height: 1px;
     background-color: black;
     margin: 10px 0;
