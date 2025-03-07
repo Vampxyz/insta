@@ -1,0 +1,21 @@
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#main {
+    display: grid;
+
+}
+
+p::after, p::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0;
+}
