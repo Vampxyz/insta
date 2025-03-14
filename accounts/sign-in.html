@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/segoe-wp" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
+    />
     <title>Sign in • Instagram</title>
-    <link rel="stylesheet" href="sign-in.css">
-</head>
-<body>
+    <link rel="stylesheet" href="sign-in.css" />
+  </head>
+  <body>
     <!-- MAIN -->
-     <div id="main">
-        <!-- Container -->
-        <div class="container">
-            <h1 class="logo">Instagram</h1>
-            <div class="first-content">
-                <!-- Form -->
-                <form action="">
-                    <input type="text" placeholder="Phone number, username or email">
-                    <input type="password" placeholder="Password">
-                    <button>Log In</button>
-                </form>
+    <div id="main">
+      <!-- Container -->
+      <div class="container">
+        <!-- Logo -->
+        <h1 class="logo">Instagram</h1>
 
-                <!-- Separate -->
-                <div class="separate">
-                    <p> or </p>
-                </div>
+        <!-- First Content -->
+        <div class="first-content">
+          <!-- Form -->
+          <form action="">
+            <input type="text" placeholder="Phone number, username or email" />
+            <input type="password" placeholder="Password" />
+            <button disabled>Log In</button>
+          </form>
 
-                
+          <!-- Separate -->
+          <div class="separate">
+            <p>OR</p>
+          </div>
 
+          <!-- Social Media -->
+          <div class="social-media">
+              <button class="facebook">
+                  <i class="fi-brands-facebook"></i>
+                  <p>Log in with Facebook</p>
+                </button>
+
+                <!-- Forgot Password -->
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
         </div>
-        <div id="sign-up">
-            <h3>Don't have account? <span>Sign-up</span></h3>
-        </div>
-     </div>
-</body>
+      </div>
+
+      <!-- Sign Up -->
+      <div id="sign-up">
+        <h3>Don't have account? <span>Sign-up</span></h3>
+      </div>
+    </div>
+  </body>
 </html>
