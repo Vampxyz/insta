@@ -1,172 +1,270 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: "Segoe WP", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Segoe WP", sans-serif;
 }
 
 :root {
-    --white: #f5f5f5;
-    --black: #121212;
-    
-    --gray: #363636;
-    --gray-hover: #868686;
-    --darkgray: #262626;
-    --lightgray: #c7c7c7;
+  --white: #f5f5f5;
+  --black: #121212;
 
-    --blue-gray: #95a7b2;
+  --gray: #363636;
+  --gray-hover: #868686;
+  --darkgray: #262626;
+  --lightgray: #c7c7c7;
 
-    --blue: #0095f6;
-    --blue-hover: #1877f2;
-    --dark-blue: #0069ad;
+  --blue-gray: #95a7b2;
+
+  --blue: #0095f6;
+  --blue-hover: #1877f2;
+  --dark-blue: #0069ad;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    min-height: 100vh;
-    background-color: black;
+  min-height: 100vh;
+  background-color: black;
 }
 
 /* Main */
-#main {
-    padding: 40px;
 
-    width: 350px;
-    height: 410px;
-
-    border: 1px solid var(--gray);
+    #main {
+        padding: 40px;
+        
+        display: flex;
+        justify-content: center;
+    }
+    #main .phone {
+        display: flex;
+        justify-content: center;
+  align-items: center;
+  
+  width: 450px;
+  height: 630px;
+  
+  margin-bottom: 12px;
 }
 
-#main .container {    
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    gap: 40px;
-}
-#main .container .logo {
-   color: var(--white);
-   margin: 0;
+/* Sign In */
+
+    #main .sign-in {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        
+        width: 350px;
+    }
+    #main .sign-in .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        
+        height: 410px;
+        
+        gap: 25px;
+        padding: 40px;
+        
+        border: 1px solid var(--gray);
+    }
+    
+    .sign-in .container .logo {
+        font-family: "Christmas Bell - Personal Use", sans-serif;
+        
+        font-size: 50px;
+        font-weight: 200;
+        margin: 0;
+        
+        color: var(--white);
+    }
+    .sign-in .container .first-content {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
 }
 
-#main .container .first-content {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-}
 
 /* Form */
-#main .container form {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 100%;
+.container .first-content .form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
 }
-.container form input {
-    padding: 10px;
-    border: 1px solid var(--gray);
-    border-radius: 3px;
 
-    width: 100%;
+/* Inputs */
+.first-content .form input {
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: 3px;
 
-    background-color: var(--black);
-    color: var(--white);
+  width: 100%;
+
+  background-color: var(--black);
+  color: var(--white);
 }
-/* input::placeholder {
-    position: absolute;
-    top: 0px;
-    font-size: 11px;
-} */
 
-.container form button:is(:disabled) {
-    padding: 8px;
-    margin-top: 14px;
-    border: 1px solid var(--dark-blue);
-    border-radius: 8px;
+/* Password */
 
-    background-color: var(--dark-blue);
-    color: var(--blue-gray);
-    font-weight: bold;
+.first-content .form .password {
+  position: relative;
 }
-.container form button:is(:enabled) {
-    padding: 8px;
-    margin-top: 14px;
-    border: 1px solid var(--blue);
-    border-radius: 8px;
+.first-content .form .password i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--white);
+  cursor: pointer;
+}
 
-    background-color: var(--blue);
-    color: var(--white);
-    font-weight: bold;
+/* Button */
+.first-content .form button:is(:disabled) {
+  padding: 8px;
+  margin-top: 14px;
+  border: 1px solid var(--dark-blue);
+  border-radius: 8px;
+
+  background-color: var(--dark-blue);
+  color: var(--blue-gray);
+  font-weight: bold;
+}
+.first-content .form button:is(:enabled) {
+  padding: 8px;
+  margin-top: 14px;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
 }
 
 /* Separate */
 #main .separate {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    align-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
 
-    margin-top: 16px;
+  margin-top: 16px;
 
-    gap: 16px;
+  gap: 16px;
 
-    color: #a8a8a8;
-    font-weight: bold;
+  color: #a8a8a8;
+  font-weight: bold;
 }
-#main .separate::after, .separate::before {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 1px;
-    background-color: var(--gray);
-    margin: 10px 0;
+#main .separate::after,
+.separate::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: var(--gray);
+  margin: 10px 0;
 }
 #main .separate p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* Social Media */
 .container .first-content .social-media {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 
-    background: none;
+  background: none;
 
-    margin-top: 26px;
+  margin-top: 26px;
 }
 .first-content .social-media .facebook {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 
-    padding: 0;
+  padding: 0;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: var(--blue);
-    font-weight: bold;
+  color: var(--blue);
+  font-weight: bold;
 }
 .social-media .facebook i {
-    margin-right: 8px;
-    display: flex;
-    font-size: 20px;
+  margin-right: 8px;
+  display: flex;
+  font-size: 20px;
 }
 .social-media .facebook:hover p {
-    color: var(--white);
+  color: var(--white);
+}
+.first-content .social-media a {
+  color: var(--white);
+  font-size: 14px;
 }
 
-/* Forgot Password */
-.first-content .social-media a {
-    color: var(--white);
-    font-size: 14px;
+/* Sign Up */
+#sign-up {
+  font-size: 13px;
+  padding: 10px 0px;
+
+  border: 1px solid var(--gray);
 }
+#sign-up h3 {
+  text-align: center;
+  color: var(--white);
+
+  margin: 15px;
+
+  font-weight: normal;
+}
+#sign-up a {
+  color: var(--blue);
+  font-weight: normal;
+}
+
+/* Get the App */
+
+    .sign-in .get-app {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .sign-in .get-app p {
+        text-align: center;
+        
+        font-size: 13px;
+        
+        color: var(--white);
+        font-weight: normal;
+    }
+    .sign-in .get-app .download {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+/* Images */
+
+    .get-app .download img {
+        cursor: pointer;
+    }
+    .get-app .download #google {
+        width: 140px;
+        height: 40px;
+    }
+    .get-app .download #microsoft {
+        width: 115px;
+        height: 40px;
+    }
+    

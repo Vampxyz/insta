@@ -8,47 +8,97 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <title>Sign in • Instagram</title>
     <link rel="stylesheet" href="sign-in.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/christmas-bell-personal-use"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- MAIN -->
     <div id="main">
-      <!-- Container -->
-      <div class="container">
-        <!-- Logo -->
-        <h1 class="logo">Instagram</h1>
-
-        <!-- First Content -->
-        <div class="first-content">
-          <!-- Form -->
-          <form action="">
-            <input type="text" placeholder="Phone number, username or email" />
-            <input type="password" placeholder="Password" />
-            <button disabled>Log In</button>
-          </form>
-
-          <!-- Separate -->
-          <div class="separate">
-            <p>OR</p>
-          </div>
-
-          <!-- Social Media -->
-          <div class="social-media">
-              <button class="facebook">
-                  <i class="fi-brands-facebook"></i>
-                  <p>Log in with Facebook</p>
-                </button>
-
-                <!-- Forgot Password -->
-                <a href="#" class="forgot-password">Forgot password?</a>
-            </div>
-        </div>
+      <!-- Phones -->
+      <div class="phones">
+        <img src="assets/home-phones-2x.png" class="phone" alt="" />
       </div>
 
-      <!-- Sign Up -->
-      <div id="sign-up">
-        <h3>Don't have account? <span>Sign-up</span></h3>
+      <!-- Sign In -->
+      <div class="sign-in">
+        <!-- Container -->
+        <div class="container">
+          <!-- Logo -->
+          <h1 class="logo">Instagram</h1>
+
+          <!-- First Content -->
+          <div class="first-content">
+            <!-- Form -->
+            <form class="form">
+              <!-- Email -->
+              <input
+                type="text"
+                placeholder="Phone number, username or email"
+                id="email"
+                required
+              />
+
+              <!-- Password -->
+              <div class="password">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+
+                <!-- Eyes -->
+                <i class="fi-rr-eye" id="open"></i>
+                <i class="fi-rr-eye-crossed" id="close"></i>
+              </div>
+
+              <!-- Log In -->
+              <button disabled id="log-in">Log In</button>
+            </form>
+
+            <!-- Separate -->
+            <div class="separate">
+              <p>OR</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+              <button class="facebook">
+                <i class="fi-brands-facebook"></i>
+                <p>Log in with Facebook</p>
+              </button>
+
+              <!-- Forgot Password -->
+              <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sign Up -->
+        <div id="sign-up">
+          <h3>
+            Don't have account? <a href="../accounts/sign-up.html">Sign-up</a>
+          </h3>
+        </div>
+
+        <!-- Get the App -->
+        <div class="get-app">
+          <p>Get the app.</p>
+
+          <div class="download">
+            <img src="assets/googleplay.png" id="google" alt="" />
+            <img src="assets/microsoft.png" id="microsoft" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   </body>
