@@ -35,63 +35,61 @@ body {
 
 /* Main */
 
-    #main {
-        padding: 40px;
-        
-        display: flex;
-        justify-content: center;
-    }
-    #main .phone {
-        display: flex;
-        justify-content: center;
+#main {
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+#main .phone {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  
+
   width: 450px;
   height: 630px;
-  
+
   margin-bottom: 12px;
 }
 
-
 /* Sign In */
 
-    #main .sign-in {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        
-        width: 350px;
-    }
-    #main .sign-in .container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        
-        height: 410px;
-        
-        gap: 25px;
-        padding: 40px;
-        
-        border: 1px solid var(--gray);
-    }
-    
-    .sign-in .container .logo {
-        font-family: "Christmas Bell - Personal Use", sans-serif;
-        
-        font-size: 50px;
-        font-weight: 200;
-        margin: 0;
-        
-        color: var(--white);
-    }
-    .sign-in .container .first-content {
+#main .sign-in {
   display: flex;
   flex-direction: column;
-  
-  width: 100%;
+  gap: 12px;
+
+  width: 350px;
+}
+#main .sign-in .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  height: 410px;
+
+  gap: 25px;
+  padding: 40px;
+
+  border: 1px solid var(--gray);
 }
 
+.sign-in .container .logo {
+  font-family: "Christmas Bell - Personal Use", sans-serif;
+
+  font-size: 50px;
+  font-weight: 200;
+  margin: 0;
+
+  color: var(--white);
+}
+.sign-in .container .first-content {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
 
 /* Form */
 .container .first-content .form {
@@ -234,37 +232,42 @@ body {
 
 /* Get the App */
 
-    .sign-in .get-app {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .sign-in .get-app p {
-        text-align: center;
-        
-        font-size: 13px;
-        
-        color: var(--white);
-        font-weight: normal;
-    }
-    .sign-in .get-app .download {
+.sign-in .get-app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sign-in .get-app p {
+  text-align: center;
+
+  font-size: 13px;
+
+  color: var(--white);
+  font-weight: normal;
+}
+.sign-in .get-app .download {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-
 /* Images */
 
-    .get-app .download img {
-        cursor: pointer;
-    }
-    .get-app .download #google {
-        width: 140px;
-        height: 40px;
-    }
-    .get-app .download #microsoft {
-        width: 115px;
-        height: 40px;
-    }
-    
+.get-app .download img {
+  cursor: pointer;
+}
+.get-app .download #google {
+  width: 140px;
+  height: 40px;
+}
+.get-app .download #microsoft {
+  width: 115px;
+  height: 40px;
+}
+
+/* Responsive */
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+  #main .phones {
+    display: none;
+  }
+}

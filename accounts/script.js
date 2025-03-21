@@ -30,7 +30,7 @@ closeEye.addEventListener("click", () => {
 
 // Log In
 logIn.addEventListener("click", () => {
-  window.location.href = "../profile/profile.html";
+  window.location.href = "https://vampxyz.github.io/insta/profile/profile.html";
 });
 
 // Donwload
